@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+// 基本色
+$main-color: #D1D94E;
+$accent-color: #64A3D9;
+$dark-color: #878C24;
+$text-bright-color: #fff;
+$icon-color: #fff;
+$icon-bk-color: #ddd;
+$gray-color: #ddd;
+
+// 最大幅
+$max-width: 1200px;
+
+// ブレイクポイント
+$pc: 900px;
+
+// 基本設定：ページ全体
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+// フォントサイズ
+html {
+  /* ルートのフォントサイズを10pxに設定しておく */
+font-size: 62.5%;
+}
+
+body {
+/* ルートのフォントサイズを1.6em（16pxと同等のサイズ）に設定 */
+font-size: 1.6em;
+}

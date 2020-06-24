@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! destyle.css v1.0.13 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model
    ========================================================================== */
@@ -471,5 +472,19 @@ template {
    */
 [hidden] {
   display: none;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+html {
+  /* ルートのフォントサイズを10pxに設定しておく */
+  font-size: 62.5%;
+}
+
+body {
+  /* ルートのフォントサイズを1.6em（16pxと同等のサイズ）に設定 */
+  font-size: 1.6em;
 }
 /*# sourceMappingURL=main.css.map */
