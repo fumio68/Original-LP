@@ -90,7 +90,7 @@
 
 // インフォメーション
 .info {
-  padding-top: 20px;
+  padding: 20px 0;
   &__img {
     object-fit: cover;
     width: 100%;
@@ -100,5 +100,33 @@
     font-size: 1.4em;
     border-left: 5px solid $main-color;
     margin: 10px 0;
+    font-weight: bold;
   }
 }
+
+@media(min-width: $pc){
+  .info {
+    padding: 50px 0;
+    &__container {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__img {
+      width: 50%;
+      height: 300px;
+    }
+    &__texts {
+      display: flex;
+      flex-direction: column;
+      width: 45%;
+    }
+    &__title {
+      font-size: 2em;
+    }
+    &__text {
+      font-size: 1em;
+      line-height: 1.7;
+    }
+  }
+}
+
