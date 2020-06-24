@@ -70,3 +70,21 @@
     font-size: 0.9em;
   }
 }
+
+
+
+@media(min-width: $pc){
+  .hero {
+    background-position: 70% 15%;
+    &__container {
+      padding: 25px 0;
+    }
+    & h2 {
+      font-size: 3em;
+      margin-bottom: 15px;
+    }
+    & p {
+      font-size: 1.5em;
+    }
+  }
+}

@@ -608,4 +608,20 @@ a:hover {
 .hero p {
   font-size: 0.9em;
 }
+
+@media (min-width: 900px) {
+  .hero {
+    background-position: 70% 15%;
+  }
+  .hero__container {
+    padding: 25px 0;
+  }
+  .hero h2 {
+    font-size: 3em;
+    margin-bottom: 15px;
+  }
+  .hero p {
+    font-size: 1.5em;
+  }
+}
 /*# sourceMappingURL=main.css.map */
