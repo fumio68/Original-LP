@@ -521,6 +521,7 @@ a:hover {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 10;
 }
 
 .header__container {
@@ -640,6 +641,7 @@ a:hover {
      object-fit: cover;
   width: 100%;
   height: 210px;
+  border-radius: 10px;
 }
 
 .info__title {
@@ -648,6 +650,10 @@ a:hover {
   margin: 15px 0;
   font-weight: bold;
   padding-left: 8px;
+}
+
+.info__text {
+  line-height: 1.7;
 }
 
 @media (min-width: 900px) {
@@ -678,10 +684,6 @@ a:hover {
   }
   .info__title {
     font-size: 2em;
-  }
-  .info__text {
-    font-size: 1em;
-    line-height: 1.7;
   }
 }
 
@@ -738,5 +740,47 @@ a:hover {
   .service__content {
     width: 30%;
   }
+}
+
+.intro {
+  padding: 30px 0;
+}
+
+.intro__texts {
+  margin-bottom: 25px;
+}
+
+.intro__title {
+  font-size: 1.4em;
+  border-left: 5px solid #BBE601;
+  margin: 15px 0;
+  font-weight: bold;
+  padding-left: 8px;
+}
+
+.intro__text {
+  line-height: 1.7;
+}
+
+.intro__photos li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.intro__photos li:nth-child(even) {
+  text-align: right;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+
+.intro__photos li:nth-child(odd) {
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
+
+.intro__photo {
+  width: 65%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 20px -7px rgba(0, 0, 0, 0.8);
+          box-shadow: 0px 0px 20px -7px rgba(0, 0, 0, 0.8);
 }
 /*# sourceMappingURL=main.css.map */
