@@ -1,16 +1,16 @@
 @charset "UTF-8";
 
 // 基本色
-$main-color: #D1D94E;
-$accent-color: #64A3D9;
-$dark-color: #878C24;
+$main-color: #BBE601;
+$accent-color: #176DE6;
+$dark-color: #7B990F;
 $text-bright-color: #fff;
 $icon-color: #fff;
 $icon-bk-color: #ddd;
 $gray-color: #ddd;
 
 // 最大幅
-$max-width: 1200px;
+$max-width: 1240px;
 
 // ブレイクポイント
 $pc: 900px;
@@ -29,4 +29,27 @@ font-size: 62.5%;
 body {
 /* ルートのフォントサイズを1.6em（16pxと同等のサイズ）に設定 */
 font-size: 1.6em;
+}
+
+// 共通設定
+.wrapper {
+  width: 84%;
+  margin: 0 auto;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }

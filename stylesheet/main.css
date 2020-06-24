@@ -487,4 +487,73 @@ body {
   /* ルートのフォントサイズを1.6em（16pxと同等のサイズ）に設定 */
   font-size: 1.6em;
 }
+
+.wrapper {
+  width: 84%;
+  margin: 0 auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.header {
+  background-color: #BBE601;
+}
+
+.header__container {
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header img {
+  width: 120px;
+}
+
+.nav-button {
+  width: 20px;
+  height: 14px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.nav-button::before, .nav-button::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: currentColor;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+.nav-button::before {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: 0 6px currentColor;
+          box-shadow: 0 6px currentColor;
+}
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,33 @@
+// ヘッダー
+.header {
+  background-color: $main-color;
+  &__container {
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  & img {
+    width: 120px;
+  }
+}
+
+// ナビゲーション
+.nav-button {
+  width: 20px;
+  height: 14px;
+  cursor: pointer;
+  color: #fff;
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: currentColor;
+    transform: translateY(5px);
+  }
+  &::before {
+    transform: translateY(-5px);
+    box-shadow: 0 6px currentColor;
+  }
+}
