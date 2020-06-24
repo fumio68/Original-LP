@@ -28,7 +28,7 @@
   width: 20px;
   height: 14px;
   cursor: pointer;
-  color: #fff;
+  color: $icon-color;
   &::before,
   &::after {
     content: "";
@@ -40,5 +40,33 @@
   &::before {
     transform: translateY(-5px);
     box-shadow: 0 6px currentColor;
+  }
+}
+
+// ヒーローイメージ
+.hero {
+  width: 100vw;
+  height: 70vh;
+  background-image: url(../image/Hero.jpg);
+  background-size: cover;
+  background-position: 70% 0;
+  display: flex;
+  &__wrapper {
+    background-color: rgba(255, 255, 255, 0.7);
+    flex: auto;
+    align-self: flex-end;
+  }
+  &__container {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+  & h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  & p {
+    font-size: 0.9em;
   }
 }
