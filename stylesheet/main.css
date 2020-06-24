@@ -722,4 +722,21 @@ a:hover {
 .service__text {
   line-height: 1.7;
 }
+
+@media (min-width: 900px) {
+  .service {
+    padding: 50px 0;
+  }
+  .service__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .service__content {
+    width: 30%;
+  }
+}
 /*# sourceMappingURL=main.css.map */

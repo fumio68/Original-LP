@@ -169,3 +169,16 @@
     line-height: 1.7;
   }
 }
+
+@media(min-width:$pc) {
+  .service {
+    padding: 50px 0;
+    &__container {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__content {
+      width: 30%;
+    }
+  }
+}
