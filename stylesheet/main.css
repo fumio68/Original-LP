@@ -491,6 +491,7 @@ body {
 .wrapper {
   width: 84%;
   margin: 0 auto;
+  max-width: 1240px;
 }
 
 a {
@@ -532,6 +533,15 @@ a:hover {
 
 .header img {
   width: 120px;
+}
+
+@media (min-width: 900px) {
+  .header__container {
+    height: 75px;
+  }
+  .header img {
+    width: 200px;
+  }
 }
 
 .nav-button {

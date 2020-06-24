@@ -12,6 +12,17 @@
   }
 }
 
+@media(min-width: $pc){
+  .header {
+    &__container {
+      height: 75px;
+    }
+    & img {
+      width: 200px;
+    }
+  }
+}
+
 // ナビゲーション
 .nav-button {
   width: 20px;

@@ -35,6 +35,7 @@ font-size: 1.6em;
 .wrapper {
   width: 84%;
   margin: 0 auto;
+  max-width: $max-width;
 }
 a {
   color: inherit;
