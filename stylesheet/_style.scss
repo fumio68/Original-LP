@@ -1,6 +1,10 @@
 // ヘッダー
 .header {
   background-color: $main-color;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   &__container {
     height: 55px;
     display: flex;
@@ -49,8 +53,9 @@
   height: 70vh;
   background-image: url(../image/Hero.jpg);
   background-size: cover;
-  background-position: 70% 0;
+  background-position: 70% top;
   display: flex;
+  margin-top: 55px;
   &__wrapper {
     background-color: rgba(255, 255, 255, 0.7);
     flex: auto;
@@ -74,7 +79,7 @@
 @media(min-width: $pc){
   .hero {
     height: 80vh;
-    background-position: 70% 15%;
+    background-position: 70% 0;
     &__container {
       padding: 25px 0;
     }
@@ -90,7 +95,7 @@
 
 // インフォメーション
 .info {
-  padding: 20px 0;
+  padding: 30px 0;
   &__img {
     object-fit: cover;
     width: 100%;
@@ -99,8 +104,9 @@
   &__title {
     font-size: 1.4em;
     border-left: 5px solid $main-color;
-    margin: 10px 0;
+    margin: 15px 0;
     font-weight: bold;
+    padding-left: 8px;
   }
 }
 
@@ -130,3 +136,36 @@
   }
 }
 
+// サービス
+.service {
+  background-color: rgba(255, 215, 63, 0.2);
+  padding: 30px 0;
+  &__container {
+    text-align: center;
+  }
+  &__content:not(:last-child) {
+    margin-bottom: 25px;
+  }
+  &__icon{
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 40px;
+    width: 2em;
+    line-height: 2em;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #ddd;
+    background: $icon-bk-color;
+    color: #fff;
+    color: $icon-color;
+  }
+  &__title {
+    font-size: 1.3em;
+    color: #176DE6;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  &__text {
+    line-height: 1.7;
+  }
+}

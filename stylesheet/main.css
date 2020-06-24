@@ -517,6 +517,10 @@ a:hover {
 
 .header {
   background-color: #BBE601;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .header__container {
@@ -573,10 +577,11 @@ a:hover {
   height: 70vh;
   background-image: url(../image/Hero.jpg);
   background-size: cover;
-  background-position: 70% 0;
+  background-position: 70% top;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 55px;
 }
 
 .hero__wrapper {
@@ -612,7 +617,7 @@ a:hover {
 @media (min-width: 900px) {
   .hero {
     height: 80vh;
-    background-position: 70% 15%;
+    background-position: 70% 0;
   }
   .hero__container {
     padding: 25px 0;
@@ -627,7 +632,7 @@ a:hover {
 }
 
 .info {
-  padding: 20px 0;
+  padding: 30px 0;
 }
 
 .info__img {
@@ -640,8 +645,9 @@ a:hover {
 .info__title {
   font-size: 1.4em;
   border-left: 5px solid #BBE601;
-  margin: 10px 0;
+  margin: 15px 0;
   font-weight: bold;
+  padding-left: 8px;
 }
 
 @media (min-width: 900px) {
@@ -677,5 +683,43 @@ a:hover {
     font-size: 1em;
     line-height: 1.7;
   }
+}
+
+.service {
+  background-color: rgba(255, 215, 63, 0.2);
+  padding: 30px 0;
+}
+
+.service__container {
+  text-align: center;
+}
+
+.service__content:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.service__icon {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 40px;
+  width: 2em;
+  line-height: 2em;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #ddd;
+  background: #ddd;
+  color: #fff;
+  color: #fff;
+}
+
+.service__title {
+  font-size: 1.3em;
+  color: #176DE6;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.service__text {
+  line-height: 1.7;
 }
 /*# sourceMappingURL=main.css.map */
