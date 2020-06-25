@@ -897,4 +897,22 @@ p {
     margin-top: 25px;
   }
 }
+
+.footer {
+  text-align: center;
+  background-color: #BBE601;
+  color: #fff;
+  font-size: 0.8em;
+  height: 55px;
+}
+
+.footer p {
+  line-height: 55px;
+}
+
+@media (min-width: 900px) {
+  .footer {
+    font-size: 1em;
+  }
+}
 /*# sourceMappingURL=main.css.map */

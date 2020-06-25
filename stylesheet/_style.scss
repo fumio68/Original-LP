@@ -319,3 +319,21 @@
     }
   }
 }
+
+// フッター
+.footer {
+  text-align: center;
+  background-color: $main-color;
+  color: $text-bright-color;
+  font-size: 0.8em;
+  height: 55px;
+  & p {
+    line-height: 55px;
+  }
+}
+
+@media(min-width:$pc) {
+  .footer {
+    font-size: 1em;
+  }
+}
