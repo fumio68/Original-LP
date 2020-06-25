@@ -706,10 +706,6 @@ body {
   margin-bottom: 10px;
 }
 
-.hero p {
-  font-size: 0.9em;
-}
-
 @media (min-width: 768px) {
   .hero h2 {
     font-size: 3em;
