@@ -110,9 +110,6 @@
     font-weight: bold;
     padding-left: 8px;
   }
-  &__text {
-    line-height: 1.7;
-  }
 }
 
 @media(min-width: $pc){
@@ -169,9 +166,6 @@
     margin-bottom: 8px;
     font-weight: bold;
   }
-  &__text {
-    line-height: 1.7;
-  }
 }
 
 @media(min-width:$pc) {
@@ -202,9 +196,6 @@
     margin: 15px 0;
     font-weight: bold;
     padding-left: 8px;
-  }
-  &__text {
-    line-height: 1.7;
   }
   &__photos {
     & li:not(:last-child){
@@ -269,5 +260,37 @@
         left: 0;
       }
     }
+  }
+}
+
+// アクセス・お問い合わせ
+.access {
+  padding: 30px 0;
+  background-color: rgba(23, 109, 230, 0.1);
+  &__texts {
+    margin-bottom: 25px;
+    &__box {
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+      &__title{
+        font-weight: bold;
+        margin-bottom: 5px;
+        & > span {
+          color: $accent-color;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+  &__title {
+    font-size: 1.4em;
+    border-left: 5px solid $main-color;
+    margin: 15px 0;
+    font-weight: bold;
+    padding-left: 8px;
+  }
+  &__map {
+    width: 100%;
   }
 }

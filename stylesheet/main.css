@@ -504,6 +504,10 @@ a:hover {
   opacity: 0.8;
 }
 
+p {
+  line-height: 1.7;
+}
+
 .sr-only {
   border: 0;
   clip: rect(0 0 0 0);
@@ -652,10 +656,6 @@ a:hover {
   padding-left: 8px;
 }
 
-.info__text {
-  line-height: 1.7;
-}
-
 @media (min-width: 900px) {
   .info {
     padding: 80px 0;
@@ -724,10 +724,6 @@ a:hover {
   font-weight: bold;
 }
 
-.service__text {
-  line-height: 1.7;
-}
-
 @media (min-width: 900px) {
   .service {
     padding: 80px 0;
@@ -762,10 +758,6 @@ a:hover {
   margin: 15px 0;
   font-weight: bold;
   padding-left: 8px;
-}
-
-.intro__text {
-  line-height: 1.7;
 }
 
 .intro__photos li:not(:last-child) {
@@ -842,5 +834,40 @@ a:hover {
     top: 220px;
     left: 0;
   }
+}
+
+.access {
+  padding: 30px 0;
+  background-color: rgba(23, 109, 230, 0.1);
+}
+
+.access__texts {
+  margin-bottom: 25px;
+}
+
+.access__texts__box:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.access__texts__box__title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.access__texts__box__title > span {
+  color: #176DE6;
+  margin-right: 5px;
+}
+
+.access__title {
+  font-size: 1.4em;
+  border-left: 5px solid #BBE601;
+  margin: 15px 0;
+  font-weight: bold;
+  padding-left: 8px;
+}
+
+.access__map {
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
