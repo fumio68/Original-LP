@@ -117,7 +117,7 @@
 
 @media(min-width: $pc){
   .info {
-    padding: 50px 0;
+    padding: 80px 0;
     &__container {
       display: flex;
       justify-content: space-between;
@@ -133,6 +133,9 @@
     }
     &__title {
       font-size: 2em;
+    }
+    &__text {
+      font-size: 1.2em;
     }
   }
 }
@@ -173,13 +176,16 @@
 
 @media(min-width:$pc) {
   .service {
-    padding: 50px 0;
+    padding: 80px 0;
     &__container {
       display: flex;
       justify-content: space-between;
     }
     &__content {
       width: 30%;
+    }
+    &__text {
+      font-size: 1.2em;
     }
   }
 }
@@ -206,15 +212,62 @@
     }
     & li:nth-child(even) {
       text-align: right;
-      transform: rotate(5deg);
-    }
-    & li:nth-child(odd) {
-      transform: rotate(-5deg);
     }
   }
   &__photo {
     width: 65%;
+    height: 100%;
     border-radius: 50%;
     box-shadow: 0px 0px 20px -7px rgba(0, 0, 0, 0.8);
+    &--1, &--3 {
+      transform: rotate(-5deg);
+    }
+    &--2, &--4 {
+      transform: rotate(5deg);
+    }
+  }
+}
+
+@media(min-width:$pc) {
+  .intro {
+    padding: 80px 0;
+    height: 1310px;
+    &__texts {
+      margin-bottom: 25px;
+      text-align: center;
+    }
+    &__title {
+      font-size: 2em;
+      display: inline-block;
+    }
+    &__text {
+      font-size: 1.2em;
+    }
+    &__photos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      & li {
+        width: 48%;
+        position: relative;
+        &:first-child {
+          margin-bottom: 50px;
+        }
+      }
+    }
+    &__photo {
+      width: 100%;
+      transform: rotate(0);
+      &--2 {
+        position: absolute;
+        top: 190px;
+        left: 0;
+      }
+      &--4 {
+        position: absolute;
+        top: 220px;
+        left: 0;
+      }
+    }
   }
 }
