@@ -32,7 +32,7 @@ body {
   }
 }
 
-// ナビゲーション
+// ナビゲーションボタン
 .nav-button {
   width: 20px;
   height: 14px;
@@ -45,10 +45,71 @@ body {
     height: 2px;
     background-color: currentColor;
     transform: translateY(5px);
+    transition: 0.3s ease-in-out;
   }
   &::before {
     transform: translateY(-5px);
     box-shadow: 0 6px currentColor;
+  }
+}
+// ナビゲーションボタン（閉じるボタン）
+.open .nav-button {
+  z-index: 1000;
+  color: #333;
+  &::before {
+    transform: translateY(1px) rotate(45deg);
+    box-shadow: none;
+  }
+  &::after {
+    transform: translateY(-1px) rotate(-45deg);
+  }
+}
+// ナビゲーションメニュー：モバイル
+@media(max-width: 899px){
+  html.open, .open body {
+    height: 100%;
+    overflow: hidden;
+  }
+  .open nav {
+    left: 0;
+  }
+  .nav {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100vh;
+    background:rgba(255, 255, 255, 0.8);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: left 0.5s;
+    & ul {
+      font-weight: bold;
+      text-align: center;
+    }
+    & li:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+}
+// ナビゲーションメニュー（PC)
+@media(min-width:900px) {
+  .nav-button {
+    display: none;
+  }
+  .nav {
+    & ul {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      color: #333;
+      font-size: 1.2em;
+    }
+    & li:not(:last-child) {
+      margin-right: 23px;
+    }
   }
 }
 

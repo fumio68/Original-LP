@@ -3,6 +3,10 @@ $(function() {
   // 全体のフェードイン
   $('body').fadeIn(1500);
 
+  $('.nav-button').on('click', function() {
+    $('html').toggleClass('open');
+  });
+
   // 要素のスクロールイン
   $(window).scroll(function (){
     $('.fadein').each(function(){

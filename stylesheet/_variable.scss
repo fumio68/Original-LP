@@ -59,3 +59,12 @@ p {
   position: absolute;
   width: 1px;
 }
+html, body {
+  overflow-x: hidden;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #333;
+  border-radius: 30px;
+}
