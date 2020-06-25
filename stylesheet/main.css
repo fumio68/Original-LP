@@ -519,6 +519,10 @@ p {
   width: 1px;
 }
 
+body {
+  display: none;
+}
+
 .header {
   background-color: #BBE601;
   position: fixed;
@@ -579,7 +583,7 @@ p {
 
 .hero {
   width: 100vw;
-  height: 70vh;
+  height: 80vh;
   background-image: url(../image/Hero.jpg);
   background-size: cover;
   background-position: 70% top;
@@ -942,5 +946,19 @@ p {
   .access__map {
     width: 50%;
   }
+}
+
+.fadein {
+  opacity: 0;
+  -webkit-transform: translate(0, 50px);
+          transform: translate(0, 50px);
+  -webkit-transition: all 1500ms;
+  transition: all 1500ms;
+}
+
+.fadein.scrollin {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 /*# sourceMappingURL=main.css.map */
