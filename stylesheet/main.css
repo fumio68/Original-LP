@@ -870,4 +870,31 @@ p {
 .access__map {
   width: 100%;
 }
+
+@media (min-width: 900px) {
+  .access {
+    padding: 80px 0;
+  }
+  .access__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .access__title {
+    font-size: 2em;
+  }
+  .access__texts {
+    width: 40%;
+  }
+  .access__texts__box__title, .access__texts__box > p {
+    font-size: 1.2em;
+  }
+  .access__map {
+    width: 55%;
+    margin-top: 25px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
